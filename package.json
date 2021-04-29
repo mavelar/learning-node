@@ -1,0 +1,24 @@
+{
+  "name": "node-tutor",
+  "version": "1.0.0",
+  "description": "Tutorial",
+  "main": "app.js",
+  "author": "mavelar",
+  "license": "MIT",
+  "engines": {
+    "node": "14.16.1",
+    "yarn": "1.22.10"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "babel-register": "^6.26.0",
+    "koa": "^2.13.1",
+    "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "lint": "^0.7.0"
+  }
+}
