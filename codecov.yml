@@ -2,8 +2,8 @@ coverage:
   status:
     project:
       default:
-        target: 20%    # the required coverage value
-        threshold: 20%  # the leniency in hitting the target
+        target: 90%    # the required coverage value
+        threshold: 0%  # the leniency in hitting the target
         flags: 
           - unit
         paths: 
@@ -13,6 +13,3 @@ coverage:
         # only_pulls: false
   comment:
     layout: "reach, diff, flags, files"
-
-codecov:
-  disable_default_path_fixes: false
