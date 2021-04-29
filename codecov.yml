@@ -2,7 +2,7 @@ coverage:
   status:
     project:
       default:
-        target: 80%    # the required coverage value
+        target: 50%    # the required coverage value
         threshold: 0%  # the leniency in hitting the target
         flags: 
           - unit
