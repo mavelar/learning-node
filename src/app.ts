@@ -5,6 +5,7 @@ import logger from 'koa-logger';
 import json from 'koa-logger';
 import bodyParser from 'koa-bodyparser';
 
+// app config
 const app = new Koa();
 const router = new Router();
 
