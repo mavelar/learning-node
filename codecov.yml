@@ -13,6 +13,3 @@ coverage:
         # only_pulls: false
   comment:
     layout: "reach, diff, flags, files"
-
-codecov:
-  disable_default_path_fixes: false
