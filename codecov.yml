@@ -6,10 +6,10 @@ codecov:
     wait_for_ci: yes
 coverage:
   status:
-    project:
+    patch:
       default:
-        target: 10%    # the required coverage value
-        threshold: 0%  # the leniency in hitting the target
+        target: 10%
+        threshold: 0%
         flags: 
           - unit
         paths: 
