@@ -15,7 +15,6 @@ coverage:
         if_ci_failed: error
         informational: true
         # only_pulls: false
-    patch: false
 
 ignore:
   - "dist/*"
