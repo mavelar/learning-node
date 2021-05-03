@@ -14,4 +14,4 @@ function returnTwoFive() {
     return returnTwo()+returnFive();
 }
 
-module.exports = {sum,returnTwo,returnFive};
+module.exports = {sum,returnTwo,returnFive,returnTwoFive};

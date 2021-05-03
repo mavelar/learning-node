@@ -1,4 +1,4 @@
-const {sum,returnTwo,returnFive} = require('../dist/sum');
+const {sum,returnTwo,returnFive,returnTwoFive} = require('../dist/sum');
 
 describe('/sum', () => {
     test('adds 1 + 2 to equal 3', () => {
@@ -15,5 +15,11 @@ describe('/returnTwo', () => {
 describe('/returnFive', () => {
     test('return 5', () => {
         expect(returnFive()).toBe(5);
+    });
+})
+
+describe('/returnTwoFive', () => {
+    test('return 7', () => {
+        expect(returnTwoFive()).toBe(7);
     });
 })
