@@ -16,7 +16,12 @@ interface HelloRequest {
 }
 
 // hello world
-router.post('/', async (ctx, next) => {
+router.get('/', async (ctx, next) => {
+    ctx.body = { message: 'Hello World'};
+    await next();
+})
+
+router.post('/msg', async (ctx, next) => {
     const data = <HelloRequest>ctx.request.body;
     ctx.body = { name: data.name};
     await next();

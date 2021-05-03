@@ -1,0 +1,20 @@
+language: node_js
+
+node_js:
+  - 14.16.1
+
+before_install:
+  - git config --global user.email "me@mavelar.com"
+  - git config --global user.name "Manuel Avelar"
+  - npm install yarn -g
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+jobs:
+  include:
+    - stage: test-coverage
+      name: 'Test Coverage'
+      script: yarn test:coverage
