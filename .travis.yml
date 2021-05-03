@@ -21,6 +21,7 @@ cache:
 
 script:
   - yarn build
+  - ls -la
 
 jobs:
   include:
