@@ -12,8 +12,9 @@
   "scripts": {
     "start": "node .",
     "watch": "tsc -w",
-    "nodemon": "npx nodemon --inspect",
+    "nodemon": "nodemon --inspect",
     "test": "jest",
+    "build": "tsc",
     "test:coverage": "jest --ci --coverage && codecov"
   },
   "dependencies": {

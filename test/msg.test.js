@@ -2,7 +2,7 @@ const msg = require('../dist/msg');
 
 describe('/msg', () => {
     test('Hello World', () => {
-        expect(msg.msg()).toBe('Hello World');
+        expect(msg.msg('Hello World')).toBe('Hello World');
     });
 })
 
