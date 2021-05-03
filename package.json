@@ -13,9 +13,10 @@
     "start": "node .",
     "watch": "tsc -w",
     "nodemon": "nodemon --inspect",
-    "test": "jest",
+    "test": "jest --ci --coverage",
     "build": "tsc",
-    "test:coverage": "jest --ci --coverage && codecov"
+    "test:coverage": "jest --ci --coverage && codecov",
+    "coverage": "codecov"
   },
   "dependencies": {
     "babel-register": "^6.26.0",
