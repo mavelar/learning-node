@@ -3,7 +3,6 @@ codecov:
   require_ci_to_pass: yes
   notify:
     wait_for_ci: yes
-
 coverage:
   status:
     project: 
@@ -15,10 +14,8 @@ coverage:
         if_ci_failed: error
         # informational: true
         # only_pulls: false
-
 ignore:
   - "dist/*"
   - "test/*"
-
 comment:
   layout: "reach, diff, flags, files"
