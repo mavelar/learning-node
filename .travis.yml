@@ -7,7 +7,6 @@ before_install:
   - git config --global user.email "me@mavelar.com"
   - git config --global user.name "Manuel Avelar"
   - npm install yarn -g
-  - tsc
 
 email:
   recipients:
@@ -19,6 +18,9 @@ cache:
   yarn: true
   directories:
     - node_modules
+
+script:
+  - yarn build
 
 jobs:
   include:
