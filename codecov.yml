@@ -8,14 +8,13 @@ coverage:
   status:
     project: 
       default:
-        target: 10%
+        target: 90%
         threshold: 5%
         paths: 
           - "src"
         if_ci_failed: error
-        informational: true
+        # informational: true
         # only_pulls: false
-    patch: false
 
 ignore:
   - "dist/*"
