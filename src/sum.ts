@@ -10,4 +10,8 @@ function returnFive() {
     return 5;
 }
 
-module.exports = {sum,returnTwo,returnFive};
+function returnTwoFive() {
+    return returnTwo()+returnFive();
+}
+
+module.exports = {sum,returnTwo,returnFive,returnTwoFive};

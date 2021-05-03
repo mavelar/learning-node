@@ -1,4 +1,5 @@
 codecov:
+  token: "9ebcdebc-3989-473c-9ada-3fd181965724"
   bot: "flipper"
   require_ci_to_pass: yes
   notify:
@@ -7,15 +8,12 @@ coverage:
   status:
     project: 
       default:
-        target: 90%
+        target: 10%
         threshold: 5%
         paths: 
           - "src"
         if_ci_failed: error
         # informational: true
         # only_pulls: false
-ignore:
-  - "dist/*"
-  - "test/*"
-comment:
-  layout: "reach, diff, flags, files"
+  comment:
+    layout: "reach, diff, flags, files"
