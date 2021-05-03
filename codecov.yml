@@ -9,17 +9,12 @@ coverage:
     project: 
       default:
         target: 10%
-        threshold: 0%
-    patch:
-      default:
-        target: 10%
-        threshold: 0%
-        flags: 
-          - unit
+        threshold: 5%
         paths: 
           - "src"
         if_ci_failed: error
         informational: true
         # only_pulls: false
+    patch: false
   comment:
     layout: "reach, diff, flags, files"
