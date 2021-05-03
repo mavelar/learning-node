@@ -6,6 +6,10 @@ codecov:
     wait_for_ci: yes
 coverage:
   status:
+    project: 
+      default:
+        target: 10%
+        threshold: 0%
     patch:
       default:
         target: 10%
@@ -15,7 +19,7 @@ coverage:
         paths: 
           - "src"
         if_ci_failed: error
-        # informational: false
+        informational: true
         # only_pulls: false
   comment:
     layout: "reach, diff, flags, files"
