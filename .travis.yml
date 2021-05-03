@@ -22,6 +22,6 @@ cache:
 
 jobs:
   include:
-    - stage: test-coverage
-      name: 'Test Coverage'
-      script: yarn test:coverage
+    - stage: test
+      name: 'Test'
+      script: yarn test
