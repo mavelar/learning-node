@@ -1,6 +1,10 @@
+import request from 'supertest';
+import app from '../dist/app';
+
 describe('getPeople test', () => {
-    test('getPeople should fetch a person', async () => {
-        const name = 'Luke Vader';
-        expect(name).toBe('Luke Vader');
+    test('Hello world works', async () => {
+        const response = await request(app.callback()).get('/');
+        expect(response.status).toBe(200);
+        expect(response.text).toMatchSnapshot();
     });
 });
