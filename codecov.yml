@@ -13,7 +13,7 @@ coverage:
         paths: 
           - "src"
         if_ci_failed: error
-        informational: true
+        # informational: true
         # only_pulls: false
 
 ignore:
