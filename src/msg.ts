@@ -13,3 +13,7 @@ export function say_hi(name : string) {
 export function say_bye(name : string) {
     return `Good bye ${name}!`;
 }
+
+export function say_something(content : string) {
+    return content;
+}
