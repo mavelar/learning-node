@@ -6,4 +6,8 @@ function returnTwo() {
     return 2;
 }
 
-module.exports = {sum,returnTwo};
+function returnFive() {
+    return 5;
+}
+
+module.exports = {sum,returnTwo,returnFive};
