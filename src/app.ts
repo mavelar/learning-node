@@ -27,6 +27,11 @@ router.post('/msg', async (ctx, next) => {
     await next();
 })
 
+router.post('/sum', async (ctx, next) => {
+    ctx.body = { name: 1+1};
+    await next();
+})
+
 // Middleware
 app.use(json());
 app.use(logger());
