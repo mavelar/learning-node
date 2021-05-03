@@ -17,3 +17,7 @@ export function say_bye(name : string) {
 export function say_something(content : string) {
     return content;
 }
+
+export function emotion(emoji : string) {
+    return `:${emoji}:`;
+}
