@@ -27,4 +27,4 @@ jobs:
   include:
     - stage: test
       name: 'Test'
-      script: yarn test
+      script: yarn test:coverage
