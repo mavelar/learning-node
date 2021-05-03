@@ -16,17 +16,8 @@ email:
   on_success: change
   on_failure: always
 
-cache:
-  yarn: true
-  directories:
-    - node_modules
-
 jobs:
   include:
-    - stage: coverage
-      name: 'Coverage'
-      script: yarn coverage
-      
     - stage: test
-      name: 'Test'
-      script: yarn test
+      name: 'Test / Coverage'
+      script: yarn test:coverage
