@@ -11,3 +11,9 @@ describe('/is_valid', () => {
         expect(msg.is_valid(true)).toBe(true);
     });
 })
+
+describe('/say_hi', () => {
+    test('Say Hi', () => {
+        expect(msg.say_hi('Manuel')).toBe('Hi Manuel!');
+    });
+})
