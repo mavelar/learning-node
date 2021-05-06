@@ -9,6 +9,15 @@ before_install:
   - npm install yarn -g
   - yarn install
 
+scripts:
+  - yarn add coverage -g
+
+env:
+  - CODECOV_TOKEN=
+
+after_success:
+  - codecov
+
 email:
   recipients:
     - me@mavelar.com

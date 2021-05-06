@@ -1,5 +1,4 @@
 codecov:
-  token: "9ebcdebc-3989-473c-9ada-3fd181965724"
   bot: "flipper"
   require_ci_to_pass: yes
   notify:

@@ -19,5 +19,8 @@ export function say_something(content : string) {
 }
 
 export function emotion(emoji : string) {
-    return `:${emoji}:`;
+    if(emoji==':happy:')
+        return true;
+    else
+        return false;
 }
