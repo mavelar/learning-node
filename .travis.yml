@@ -26,9 +26,6 @@ email:
 
 jobs:
   include:
-    - stage: build
-      name: 'Build'
-      script: yarn build
     - stage: test
       name: 'Test / Coverage'
-      script: yarn test:coverage
+      script: yarn test
