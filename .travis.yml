@@ -13,7 +13,7 @@ scripts:
   - yarn add coverage -g
 
 env:
-  - CODECOV_TOKEN=
+  - CODECOV_TOKEN=9ebcdebc-3989-473c-9ada-3fd181965724
 
 after_success:
   - codecov
