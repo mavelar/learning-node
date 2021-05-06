@@ -13,8 +13,8 @@
     "start": "node .",
     "watch": "tsc -w",
     "nodemon": "nodemon --inspect",
-    "test": "yarn build && jest --coverage",
     "build": "tsc",
+    "test": "yarn build && jest --ci --coverage",
     "test:coverage": "yarn build && jest --coverage && codecov",
     "coverage": "codecov"
   },
