@@ -12,7 +12,8 @@ before_install:
   - yarn build
 
 scripts:
-  - jest --ci --coverage && codecov
+  - jest --ci --coverage
+  - codecov
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
