@@ -32,6 +32,6 @@ describe('/say_something', () => {
 
 describe('/emotion', () => {
     test('Any Emoji', () => {
-        expect(msg.emotion('happy')).toBe(':happy:');
+        expect(msg.emotion('happy')).toBe(false);
     });
 })
