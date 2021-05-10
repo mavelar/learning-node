@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  JestCoverageReport:
+  CoverageReport:
     runs-on: ubuntu-latest
     steps:
     
@@ -18,26 +18,9 @@ jobs:
 
       - run: yarn test --ci --coverage
 
-      - name: Jest coverage report
-        uses: ArtiomTr/jest-coverage-report-action@v1.3
+      - name: Coverage Report
+        uses: slavcodev/coverage-monitor-action@1.2.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          threshold: 80
-  
-  CodeCoverageReport:
-    runs-on: ubuntu-latest
-    steps:
-      
-      - uses: actions/checkout@v1
-
-      - run: yarn
-
-      - run: yarn build
-
-      - run: yarn test --ci --coverage
-
-      - name: Code Coverage Report
-        uses: romeovs/lcov-reporter-action@v0.2.11
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-
+          threshold_alert: 10
+          threshold_warning: 60
