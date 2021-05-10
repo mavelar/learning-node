@@ -34,7 +34,7 @@ jobs:
   include:
     - stage: test
       name: 'Test / Coverage'
-      script: yarn test --ci --coverage
+      script: yarn test:coverage
 
 stages:
   - test

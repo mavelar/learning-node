@@ -15,7 +15,7 @@
     "nodemon": "nodemon --inspect",
     "build": "tsc",
     "test": "jest",
-    "test:coverage": "yarn build && jest --coverage && codecov",
+    "test:coverage": "jest --ci --coverage",
     "coverage": "codecov"
   },
   "dependencies": {
