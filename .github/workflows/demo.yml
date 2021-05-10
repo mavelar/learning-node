@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  CoverageReport:
+  JestCoverageReport:
     runs-on: ubuntu-latest
     steps:
     
@@ -16,12 +16,9 @@ jobs:
 
       - run: yarn build
 
-      - run: yarn test --ci --coverage --watchAll=false || exit 0
-
       - name: Coverage Report
-        uses: johanvanhelden/gha-clover-test-coverage-check@v1
+        uses: mavelar/jest-coverage-report-action@v1.3
         with:
-          percentage: "95"
-          filename: "coverage/clover.xml"
-          exit: false
-
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          threshold: 95
+          test_script: yarn test --ci --coverage --silent
