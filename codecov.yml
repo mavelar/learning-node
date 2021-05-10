@@ -1,18 +1,15 @@
-codecov:
-  bot: "flipper"
-  require_ci_to_pass: yes
-  notify:
-    wait_for_ci: yes
 coverage:
+  round: up
+  precision: 5
   status:
-    project: 
+    project:
       default:
         target: 90%
         threshold: 5%
-        paths: 
-          - "src"
-        if_ci_failed: error
-        # informational: true
-        # only_pulls: false
-  comment:
+      core-models:
+        flags:
+          - core-models
+comment:
     layout: "reach, diff, flags, files"
+ignore:
+  - "deprecated"

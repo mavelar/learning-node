@@ -14,7 +14,7 @@
     "watch": "tsc -w",
     "nodemon": "nodemon --inspect",
     "build": "tsc",
-    "test": "yarn build && jest --ci --coverage",
+    "test": "jest",
     "test:coverage": "yarn build && jest --coverage && codecov",
     "coverage": "codecov"
   },

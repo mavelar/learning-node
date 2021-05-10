@@ -11,6 +11,7 @@ before_install:
 
 scripts:
   - yarn add coverage -g
+  - yarn build
 
 env:
   - CODECOV_TOKEN=9ebcdebc-3989-473c-9ada-3fd181965724
@@ -24,8 +25,16 @@ email:
   on_success: change
   on_failure: always
 
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
 jobs:
   include:
     - stage: test
       name: 'Test / Coverage'
-      script: yarn test
+      script: yarn test --ci --coverage
+
+stages:
+  - test
