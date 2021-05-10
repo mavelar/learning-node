@@ -21,4 +21,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           threshold: 95
-          test_script: yarn test --ci --coverage --silent
