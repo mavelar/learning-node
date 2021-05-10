@@ -13,7 +13,8 @@
     "start": "node .",
     "watch": "tsc -w",
     "nodemon": "nodemon --inspect",
-    "build": "tsc"
+    "build": "tsc",
+    "test": "jest"
   },
   "dependencies": {
     "babel-register": "^6.26.0",
