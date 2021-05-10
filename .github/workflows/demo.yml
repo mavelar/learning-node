@@ -16,6 +16,8 @@ jobs:
 
       - run: yarn build
 
+      - run: yarn test --ci --coverage
+
       - name: Jest coverage report
         uses: ArtiomTr/jest-coverage-report-action@v1.3
         with:
@@ -27,6 +29,12 @@ jobs:
     steps:
       
       - uses: actions/checkout@v1
+
+      - run: yarn
+
+      - run: yarn build
+
+      - run: yarn test --ci --coverage
 
       - name: Code Coverage Report
         uses: romeovs/lcov-reporter-action@v0.2.11
