@@ -9,6 +9,10 @@ coverage:
       core-models:
         flags:
           - core-models
+    patch:
+      default:
+        target: 50%
+        threshold: 0%
 comment:
     layout: "reach, diff, flags, files"
 ignore:
