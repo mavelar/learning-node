@@ -8,10 +8,10 @@ before_install:
   - git config --global user.name "Manuel Avelar"
   - npm install yarn -g
   - yarn install
+  - yarn build
 
 scripts:
   - yarn add coverage -g
-  - yarn build
 
 env:
   - CODECOV_TOKEN=9ebcdebc-3989-473c-9ada-3fd181965724
