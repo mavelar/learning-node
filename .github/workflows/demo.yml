@@ -19,9 +19,9 @@ jobs:
       - run: yarn test --ci --coverage --watchAll=false || exit 0
 
       - name: Coverage Report
-        uses: slavcodev/coverage-monitor-action@1.2.0
+        uses: johanvanhelden/gha-clover-test-coverage-check@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          clover_file: "coverage/clover.xml"
-          threshold_alert: 10
-          threshold_warning: 60
+          percentage: "95"
+          filename: "coverage/clover.xml"
+          exit: false
+
