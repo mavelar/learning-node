@@ -18,6 +18,10 @@ export function say_something(content : string) {
     return content;
 }
 
+export function say_bword(content : string) {
+    return content;
+}
+
 export function emotion(emoji : string) {
     if(emoji==':happy:')
         return true;
