@@ -16,7 +16,7 @@ jobs:
 
       - run: yarn build
 
-      - run: yarn test --ci --coverage --silent
+      - run: yarn test --ci --coverage --silent --watchAll=false || exit 0
 
       - name: Coverage Report
         uses: mavelar/coverage-monitor-action@1.2.0
