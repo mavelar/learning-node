@@ -17,7 +17,9 @@ jobs:
       - run: yarn build
 
       - name: Coverage Report
-        uses: mavelar/jest-coverage-report-action@v1.3
+        uses: mavelar/coverage-monitor-action@1.2.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          threshold: 95
+          clover_file: "coverage/clover.xml"
+          threshold_alert: 10
+          threshold_warning: 50
