@@ -1,0 +1,24 @@
+name: GitHub Actions Demo
+
+on: [pull_request]
+
+jobs:
+  CoverageReport:
+    runs-on: ubuntu-latest
+    steps:
+    
+      - uses: actions/checkout@v1
+
+      - run: yarn
+
+      - run: yarn build
+
+      - run: yarn test --ci --coverage --silent --watchAll=false || exit 0
+
+      - name: Coverage Report
+        uses: mavelar/coverage-monitor-action@main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          clover_file: "coverage/clover.xml"
+          threshold_alert: 50
+          threshold_warning: 75
