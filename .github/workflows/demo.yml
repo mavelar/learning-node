@@ -1,9 +1,6 @@
 name: GitHub Actions Demo
 
-on:
-  pull_request:
-    branches:
-      - main
+on: [pull_request]
 
 jobs:
   CoverageReport:
@@ -19,7 +16,7 @@ jobs:
       - run: yarn test --ci --coverage --silent --watchAll=false || exit 0
 
       - name: Coverage Report
-        uses: mavelar/coverage-monitor-action@1.2.0
+        uses: mavelar/coverage-monitor-action@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           clover_file: "coverage/clover.xml"
