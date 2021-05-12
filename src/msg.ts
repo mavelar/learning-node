@@ -1,6 +1,6 @@
 /**
  * Test Pre Hook
- * @param content 
+ * @param content
  * @returns
  */
 export function msg(content : string) {
