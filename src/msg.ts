@@ -1,7 +1,7 @@
 /**
  * Test Pre Hook
  * @param content 
- * @returns
+ * @returns 
  */
 export function msg(content : string) {
     return content;
