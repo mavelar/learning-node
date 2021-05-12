@@ -9,6 +9,8 @@ jobs:
     
       - uses: actions/checkout@v1
 
+      - run: nvm use
+
       - run: yarn
 
       - run: yarn build
@@ -16,7 +18,7 @@ jobs:
       - run: yarn test --ci --coverage --silent --watchAll=false || exit 0
 
       - name: Coverage Report
-        uses: mavelar/coverage-monitor-action@main
+        uses: lessthan3/coverage-monitor-action@1.2.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           clover_file: "coverage/clover.xml"
