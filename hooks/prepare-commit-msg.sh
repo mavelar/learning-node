@@ -1,1 +1,0 @@
-hooks/prepare-commit-msg
