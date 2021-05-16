@@ -1,3 +1,8 @@
+/**
+ * Test Pre Hook
+ * @param content
+ * @returns
+ */
 export function msg(content : string) {
     return content;
 }
@@ -15,6 +20,10 @@ export function say_bye(name : string) {
 }
 
 export function say_something(content : string) {
+    return content;
+}
+
+export function say_bword(content : string) {
     return content;
 }
 
